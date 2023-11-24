@@ -1,0 +1,77 @@
+# GIT
+
+- sistema de control de versiones
+- se carga EN CADA CARPETA INDEPENDIENTE DE PROYECTO QUE QUERAMOS GESTIONAR
+
+1. Instalar git
+    - git --version
+
+2. reinicializar VSCODE
+
+3. abrir terminal en vscode
+    - ver terminal de windows
+    - Terminal adapatada  a la carpeta de trabajo que tengamos cargada
+
+4. Inicializar git
+    - teclear comando 'git init'
+    - inicializamos git para esta carpeta en particular
+
+5. Configurar Credenciales
+    - git config --global user.name "Your name here"
+    - git config --global user.email "axonmaik@gmail.com"
+
+
+6. Generar clave SSH
+    - comando ssh-keygen
+    - presionamos enter para localización de archivo default
+    - PARPHRASE vacío enter 2 veces para saltar este proceso
+
+7. Pasaar la clave PÚBLICA a GIT
+    - abrimos github
+    - en el icono de perfil / settings / SSH and GPG keys
+
+8. conectar con git posr SSH
+ - ssh -T git@github.com
+ - Cuando nos pregunta por el fingerpprint YES
+
+9. git add . && git commit -m "xXxx" && git push"
+
+10. Creamos repo remoto
+
+11. añadimos repo remoto
+    - git remote add origin https://github.com/mikemsoga/audioplayer.git
+
+12. pusheamos el repo local
+    - git remote add origin git@github.com:mikemsoga/player.git
+    - git branch -M master
+    - git push -u origin master
+
+
+
+
+    -----------------------------------------------------------------------
+    YA TENEMOS GIT
+    -----------------------------------------------------------------------
+
+
+- Ahora a crear ramas y a trabajar en equipo
+    - Creamos bueva rama -> feature/add-button
+    - Bajamos la rama al repo local
+    - trabajamos en local
+    - add, commit y push
+    - pull request
+    - merge pull request
+
+# COMANDOS
+- git add - añade los ficheros al stage
+- git commit: crea un registro de versión de nuestro software en LOCAL
+- git push: sube el registro al servidor remoto
+- git fetch: descarga ramas creadas en el servidor remoto a locala
+- git branch: me indica en que rema estoy
+- git checkout [nombre de rama] - Cambio a la rama deseado (fetch primero)
+- git status - estado del directorio de trabajo
+- git log - listado de commits
+
+
+# EXTRA - por si la liamos con las ramas
+    - git pull origin master --allow-unrelated-histories
